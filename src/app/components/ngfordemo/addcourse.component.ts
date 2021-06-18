@@ -21,6 +21,7 @@ export class AddCourseComponent{
 
         console.log(this.course);
         this.courseAddEvent.emit(this.course);
+        this.course={title:'', description:'',link:''};
 
     }
 }
