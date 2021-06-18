@@ -1,0 +1,19 @@
+{{name}}
+
+<br>
+
+{{email}}
+<br>
+
+<br>
+<form>
+    <label for="name">Name</label>
+    <input name="name" [(ngModel)]="name" type="text" />
+    <span *ngIf="!isValid">The name is required</span>
+    <br>
+    <label for="email">Email</label>
+    <input name="email" [(ngModel)]="email" type="text"/>
+    <span *ngIf="!isValid">The email is required</span>
+    <br>
+    <button (click)="submitHandler()">Submit</button>
+</form>

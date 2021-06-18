@@ -1,0 +1,18 @@
+<div class="container">
+    <app-addcourse (courseAddEvent)="addCourseFromChild($event)"></app-addcourse>
+    <br>
+    <div *ngFor = "let course of courses; let i = index">
+        <div class="card w-50">
+            <div class="card-body">
+              <h5 class="card-title">{{course.title}}</h5>
+              <p class="card-text">{{course.description}}</p>
+              <a href="{{course.link}}" class="btn btn-primary">Suscribe</a>
+              <a href="#" class="btn btn-primary m-2" *ngIf="isAdmin" (click)="deleteCourse(course, i)">Delete</a>
+            </div>
+          </div>   
+    </div>
+    
+    
+
+</div>
+
