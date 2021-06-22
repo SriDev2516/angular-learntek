@@ -1,0 +1,17 @@
+.one {
+    color: red;
+}
+
+
+.isNotValid {
+    border : 1px solid red;
+    color: red;
+}
+
+.display {
+    display: block;
+}
+
+.hide {
+    display: none;
+}

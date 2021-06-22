@@ -1,0 +1,24 @@
+
+<h2>Select Country</h2>
+<div>
+    <select class="form-control" (change)="selectHandler($event)">
+        <option value="">Select</option>
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+    </select>
+</div>
+<br/>
+
+<p>You selected {{dropDownValue}}</p>
+
+
+<div [ngSwitch]="dropDownValue">
+
+    <h3 *ngSwitchCase="'india'">India</h3>
+    <h3 *ngSwitchCase="'usa'">USA</h3>
+    <h3 *ngSwitchCase="'uk'">UK</h3>
+    <h3 *ngSwitchDefault="">You have selected no country</h3>   
+
+
+</div>

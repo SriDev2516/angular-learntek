@@ -1,0 +1,21 @@
+Directives:
+    NgIf
+    NgFor
+    ngClass
+    [class]
+    ngStyle    
+    ngSwitch
+
+Routing
+
+$http  - Pipes
+
+
+Forms
+
+User Defined Directives
+
+
+
+
+

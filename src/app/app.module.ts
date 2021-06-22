@@ -6,7 +6,9 @@ import { StudentComponent } from './components/student/student.component';
 import { DirectivesComponent } from './components/directives/directives.component';
 import { FormsModule } from '@angular/forms';
 import { NgfordemoComponent } from './components/ngfordemo/ngfordemo.component';
-import { AddCourseComponent } from './components/ngfordemo/addcourse.component';
+import { AddCourseComponent } from './components/addcourse/addcourse.component';
+import { NgstyleComponent } from './components/ngSytle/ngstyle/ngstyle.component';
+import { SwitchdemoComponent } from './components/ngswitch/switchdemo/switchdemo.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +16,15 @@ import { AddCourseComponent } from './components/ngfordemo/addcourse.component';
     StudentComponent,
     DirectivesComponent,
     NgfordemoComponent,
-    AddCourseComponent
+    AddCourseComponent,
+    NgstyleComponent,
+    SwitchdemoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule
   ],
   providers: [],
-  bootstrap: [NgfordemoComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
